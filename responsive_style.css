@@ -1,0 +1,52 @@
+:root {
+    --color-hover-button: #0f7dc28b;
+  }
+
+button:hover {
+    background-color: var(--color-hover-button) !important;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    color: #a8a8a8 !important;
+}
+
+.features a:hover {
+    text-decoration: underline;
+}
+
+.features #a-collection ul>li:hover,
+.features #a-collection ul>li>a:hover {
+    background-color: var(--color-background);
+    text-decoration: none !important;
+}
+
+.spinner {
+    background-color: rgba(183, 179, 179, 0.53);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner-wrap .text-primary{
+    color: #0F7CC2 !important;
+}
+
+.spinner-border {
+    width: 5rem !important;
+    height: 5rem !important;
+}
+
+
+
+
+

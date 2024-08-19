@@ -1,0 +1,593 @@
+/* Colors */
+:root {
+  --color-button: #0F7CC2;
+  --color-nav: #262626;
+  --color-background: #d7ddddab;
+  --color-promotion-background: #333334;
+  --color-fonts-header: #444444;
+  --color-fonts-p: #545454;
+}
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+/* HTML TAGS */
+body {
+  background-color: var(--color-background) !important;
+}
+header {
+  background-color: white;
+}
+h2,p {
+  margin-bottom: 0 !important;
+}
+ul {
+  padding-left: 0% !important;
+}
+button {
+  border-radius: 5px !important;
+  color: white !important;
+  font-weight: bold;
+  background-color: var(--color-button) !important;
+  border: none !important;
+}
+
+/* MOBILE FIRST-VIEW */
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-background);
+}
+._mobile {
+  display: block;
+}
+._tablet {
+  display: none !important;
+}
+._desktop {
+  display: none !important;
+}
+
+/* HEADER */
+header h2 {
+  font-weight: bold;
+  font-size: 135%;
+}
+header p {
+  font-size: 140%;
+  padding-bottom: 5%;
+  color: var(--color-fonts-p);
+  font-weight: bold;
+}
+nav button {
+  background: none !important;
+}
+nav button .hamburger {
+  padding: 5% 0 5%;
+  width: 20px;
+}
+nav button .hamburger>div {
+  height: 4px;
+  background: white;
+}
+nav button .hamburger>div:nth-child(2) {
+  margin: 15% 0 15%;
+}
+
+/* TOP: NAVIGATION BUTTON */
+#nav-button ul>li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#nav-button ul>li {
+  display: inline;
+}
+
+._mobile-banner { /* START OF BANNER */
+  background: url('./assets/img/_banner_image_car.png');
+  height: 378px;
+  background-size: cover;
+}
+._mobile-banner  h2 {
+  font-size: 231%;
+  font-weight: bold;
+  padding-top: 7%;
+}
+._mobile-banner  p {
+  width: 77%;
+  margin: auto;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--color-fonts-p);
+}
+._mobile-banner  button { /* END OF BANNER */
+  padding: 3% 9%;
+  border: none;
+}
+._desktop-banner {
+  display: none;
+}
+.main-section { /* START OF MAIN-SECTION BUTTON */
+  background-color: var(--color-background);
+  padding: 3% 0 12% 0;
+}
+.main-section .button-collection { 
+  text-align: center;
+}
+.main-section .button-collection>button { 
+  display: block;
+  width: 92%;
+  padding: 3% 0%;
+  margin: 0% auto;
+  margin-bottom: 2%;
+}
+.main-section .button-collection>button:nth-child(1) { 
+  margin-top: 3%;
+}
+.main-section .button-collection>button:nth-last-child(1) { /* END OF MAIN-SECTION BUTTON */
+  margin-bottom: 15%;
+}
+
+.features { /* START OF FEATURES */
+  background-color: white;
+  margin: 0 auto;
+  width: 92%;
+  border-radius: 3px;
+  padding: 10%;
+}
+.features a{
+  color: #ACADAD;
+  text-decoration: none;
+}
+.features h2 {
+  font-weight: bold;
+}
+.features h3 {
+  font-size: 16px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.features p {
+  color: var(--color-fonts-p);
+  padding: 4% 0 5% 0;
+}
+.features .features-header{
+  padding-bottom: 30%;
+}
+.features .features-header h2 {
+  padding-bottom: 8%;
+}
+.features #a-collection ul>li {
+  list-style: none;
+  font-size: 16px;
+  color: var(--color-fonts-p);
+  line-height: 31px;
+}
+.features .a-collection {
+  display: block
+}
+.features .current-offers .offer-cars .current-cars {
+  padding: 10% 0 10% 0;
+}
+.features .current-offers .offer-cars .current-cars>img { /* END OF FEATURES */
+  padding-bottom: 10%;
+}
+
+.promotions { /* START OF PROMOTIONS */
+  background-color: var(--color-promotion-background);
+  padding: 10% 0;
+}
+.promotions ._mobile-in-stock {
+  height: 214px;
+  width: 342px;
+  background: url('./assets/img/promotions_1.png'); /* MOBILE SPECIFIC ONLY*/
+  background-size: cover;
+}
+.promotions .in-stock {
+  margin: 0 auto;
+  -webkit-box-shadow: inset 0 40px 21px 0 rgb(255, 255, 255);
+  box-shadow: inset 0 40px 21px 0 rgb(255, 255, 255);
+}
+.promotions ._mobile-in-stock h3 {
+  margin-bottom: 0%;
+}
+.promotions ._mobile-in-stock .text {
+  padding-top: 6%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 23px;
+}
+.promotions ._mobile-in-stock .text>p:nth-child(1) {
+  font-size: 23px;
+  font-weight: intial;
+}
+.promotions ._mobile-in-stock .text>p:nth-child(2) { 
+  font-size: 22px;
+  font-weight: lighter;
+}
+.promotions ._tablet-in-stock {/* END OF PROMOTIONS */
+  display: none;
+}
+
+footer { /* START OF FOOTER */
+  text-align: center; 
+  background: white;
+}
+footer .top-nav {
+  padding: 10% 0 10%;
+}
+footer .top-nav ._tablet-footer{
+  display: none;
+}
+footer .top-nav .footer-top-nav p>a{
+  text-decoration: none !important;
+  color: var(--color-fonts-p);
+}
+footer .top-nav .footer-nav .image-link>img{/* START OF FOOTER */
+  padding-top: 5%;
+}
+footer .bottom-nav  { 
+  background-color: var(--color-button);
+}
+footer .bottom-nav ul { 
+  list-style-type: none;
+  margin: 0 !important;
+  font-size: 18px;
+}
+footer .bottom-nav ul>li {
+  display: inline;
+}
+footer .bottom-nav ul>li>a {
+  text-decoration: none;
+  color: white;
+}
+footer .bottom-nav #cars {
+  padding: 9%;
+}
+
+/* Styles for tablets and larger screens */
+@media(min-width: 768px) and (max-width: 812px) {
+  .content {
+    max-width: 812px;
+    margin: 0 auto;
+  }
+  ._mobile {
+    display: none !important;
+  }
+  ._tablet {
+    display: block  !important;
+  }
+  ._desktop {
+    display: none !important;
+  }
+  ._tablet-banner {
+    background: url('./assets/_tablet/_tablet_car_banner.png');
+    height: 390px !important;
+    background-size: cover;
+  }
+  ._tablet-banner h2 {
+    font-size: 59px !important;
+    padding-top: 3% !important;
+    font-weight: bold;
+  }
+  ._tablet-banner p {
+    font-size: 19px !important;
+  }
+  ._tablet-banner button {
+    font-size: 18px !important;
+    padding: 2% 4% !important;
+  }
+  ._desktop-banner {
+    display: none;
+  }
+  .main-section {
+    padding: 0% 0 5% 0;
+  }
+  .main-section .button-collection>button {
+    font-size: 23px !important;
+    padding: 2% 0% !important;
+  }
+  .main-section .button-collection>button:nth-last-child(1) { /* END OF MAIN-SECTION BUTTON */
+    margin-bottom: 8% !important;
+  }
+  .features {
+    padding: 5% 0% 10% 0%;
+  }
+  .features a {
+    font-size: 18px;
+  }
+  .features p {
+    padding: 2% 0 2% 0;
+  }
+  .features .features-header{
+    padding-bottom: 10%;
+  }
+  .features .features-header h2 {
+    padding-bottom: 4%;
+  }
+  .features .current-offers .offer-cars .current-cars {
+    padding: 10% 0 1% 0;
+  }
+  .features .current-offers .offer-cars .current-cars>img {
+    height: 8rem;
+    width: auto;
+    padding-bottom: 0%;
+  }
+  .features .current-offers .offer-cars .current-cars>h3 {
+    padding-top: 4%;
+  }
+  .promotions {
+    padding: 5% 0;
+  }
+  .promotions ._mobile-in-stock {
+    display: none;
+  }
+  .promotions ._tablet-in-stock {
+    display: block !important;
+    background: url('./assets/_tablet/_tablet_promotions.png');
+    height: 30rem !important;
+    width: 47rem;
+    background-size: cover;
+  }
+  .promotions ._tablet-in-stock h3 {
+    margin-bottom: 0%;
+  }
+  .promotions ._tablet-in-stock .text {
+    padding-top: 6%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 45px;
+  }
+  .promotions ._tablet-in-stock .text>p:nth-child(1) {
+    font-size: 46px;
+    font-weight: intial;
+  }
+  .promotions ._tablet-in-stock .text>p:nth-child(2) { 
+    font-size: 48px;
+    font-weight: lighter;
+  }
+  .promotions img {
+      height: 471px;
+      width: auto;
+  }
+  footer .top-nav {
+    display: flex;
+    justify-content: center;
+    padding: 5% 0 5%;
+  }
+  footer .footer-top-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+  }
+  footer .footer-top-nav p{
+    width: 14rem;
+  }
+  footer .footer-nav {
+    display: flex;
+  }
+  footer .footer-nav>p:nth-child(2) {
+    text-align: left;
+  }
+} 
+
+/* Styles for desktops and larger screens */
+@media(min-width: 1024px) {
+  .content {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  ._mobile {
+    display: none !important;
+  }
+  ._tablet {
+    display: none  !important;
+  }
+  ._desktop {
+    display: block !important;
+    padding: 2% 9%;
+  }
+  ._desktop p {
+    padding-bottom: 0 !important;
+  }
+  ._desktop ._desktop-header .right-nav {
+    width: 19rem;
+  }
+  ._desktop ._desktop-header .left-nav .socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28rem;
+  }
+  nav #nav-button{
+    width: 100%;
+  }
+  nav #nav-button>ul {
+    margin: 0;
+    padding: 5px 0%;
+  }
+  nav #nav-button ul>li {
+    padding-left: 61px ;
+  }
+  nav #nav-button ul>li>a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+  }
+  nav #nav-button ul>li:nth-child(1) {
+    padding-left: 9rem !important;
+  }
+  ._desktop-banner {
+    display: block;
+    background: url('./assets/_desktop/_car_banner.png');
+    height: 31rem !important;
+    background-size: cover;
+  }
+  ._desktop-banner h2 {
+    font-size: 72px !important;
+    padding-top: 3% !important;
+    font-weight: bold;
+  }
+  ._desktop-banner p {
+    font-size: 21px !important;
+  }
+  ._desktop-banner button {
+    font-size: 18px !important;
+    padding: 3% 6% !important;
+  }
+  ._desktop-banner img {
+    padding-left: 29%;
+  }
+  .main-section {
+    padding: 0% 9% 5% 9%;
+  }
+  .main-section .button-collection {
+    display: flex;
+    padding: 3% 0%;
+    justify-content: space-between;
+  }
+  .main-section .button-collection>button {
+    font-size: 23px !important;
+    padding: 23px 0% !important;
+    margin-bottom: 0% !important;
+    width: 24%;
+    margin: 0 !important;
+  }
+  .main-section .button-collection>button:nth-last-child(1) { /* END OF MAIN-SECTION BUTTON */
+    margin-bottom: 0% !important;
+  }
+  .main-section .button-collection>button:nth-child(1) { 
+    margin-top: 0% !important;
+  }
+  .features {
+    text-align: left;
+    padding: 4% 2%;
+    display: flex;
+    width: 100%;
+  }
+  .features a {
+    font-size: 18px;
+  }
+  .features h2 {
+    font-size: 22px;
+  }
+  .features p {
+    padding: 2% 0 2% 0;
+  }
+  .features .features-header{
+    padding-bottom: 0%;
+    margin-right: 156px;
+    margin-left: 3%;
+  }
+  .features ._viewport{
+    display: flex
+  }
+  .features ._viewport h2{
+    margin-right: 10px;
+  }
+  .features .features-header h2 {
+    padding-bottom: 4%;
+
+  }
+  .features .features-header #a-collection ul>li>a {
+    font-size: 17px;
+  }
+  .features #a-collection ul > li {
+    line-height: 36px;
+  }
+  .features .current-offers .offer-cars {
+    display: flex;
+    justify-content: space-between;
+    width: 70rem;
+  }
+  .features .current-offers .offer-cars .current-cars {
+    padding: 0% 0% 0% 0% !important;
+  }
+  .features .current-offers .offer-cars .current-cars>img {
+    height: 8rem;
+    width: auto;
+    padding-bottom: 0%;
+    margin: 8% 3%;
+  }
+  .features .current-offers .offer-cars .current-cars>h3 {
+    padding-top: 4%;
+  }
+  .promotions {
+    padding: 5% 9% 5% 9%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .promotions .in-stock{
+    margin: 0 !important;
+  }
+  .promotions div:nth-child(3){
+    padding-top: 0% !important;
+  }
+  .promotions ._mobile-in-stock {
+    display: none;
+  }
+  .promotions ._tablet-in-stock {
+    display: none;
+  }
+  .promotions ._tablet-in-stock {
+    display: block !important;
+    background: url('./assets/_tablet/_tablet_promotions.png');
+    height: 30rem !important;
+    width: 47rem;
+    background-size: cover;
+  }
+  .promotions ._tablet-in-stock h3 {
+    margin-bottom: 0%;
+  }
+  .promotions ._tablet-in-stock .text {
+    padding-top: 6%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 45px;
+  }
+  .promotions ._tablet-in-stock .text>p:nth-child(1) {
+    font-size: 46px;
+    font-weight: intial;
+  }
+  .promotions ._tablet-in-stock .text>p:nth-child(2) { 
+    font-size: 48px;
+    font-weight: lighter;
+  }
+  .promotions img {
+      height: 480px;
+      width: auto;
+  }
+  footer .top-nav {
+    display: flex;
+    justify-content: center;
+    padding: 2% 0 2%;
+  }
+  footer .footer-top-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 0% 8%;
+  }
+  footer .footer-top-nav p{
+    width: 14rem;
+  }
+  footer .footer-nav {
+    display: flex;
+  }
+  footer .footer-nav>p:nth-child(2) {
+    text-align: left;
+  }
+  footer .bottom-nav #cars {
+    padding: 3% 9%;
+    text-align: left;
+  }
+}
