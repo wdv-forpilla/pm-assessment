@@ -1,5 +1,4 @@
 var index = {
-
     arrayFunction: function(array, id) {
         var _ul = document.createElement("ul");
         array.forEach(function(items) {
@@ -53,11 +52,23 @@ var index = {
            _spinner.style.display = "none";
         }, 1000)
     },
+    innerWidthCheck: function() {
+        var innerWidth = window.innerWidth,
+            _class = document.getElementsByClassName('offer-cars');
+
+        if (innerWidth >= 1730) {
+            Array.from(_class).forEach(function(element) {
+                element.classList.remove("row-cols-xxl-2");
+                element.classList.add("row-cols-xxl-3");
+            });
+        }
+    },
     init: function() {
         this.spinnerWidget();
         this.navBar();
         this.featuresLink();
         this.footer();
+        this.innerWidthCheck();
     }
 }
 

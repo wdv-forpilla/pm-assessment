@@ -33,7 +33,7 @@ button {
 
 /* MOBILE FIRST-VIEW */
 .content {
-    max-width: 600px;
+    max-width: 764px;
     margin: 0 auto;
     background-color: var(--color-background);
 }
@@ -86,7 +86,8 @@ nav button .hamburger>div:nth-child(2) {
 ._mobile-banner { /* START OF BANNER */
   background: url('./assets/img/_banner_image_car.png');
   height: 378px;
-  background-size: cover;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 ._mobile-banner  h2 {
   font-size: 231%;
@@ -248,9 +249,9 @@ footer .bottom-nav #cars {
 }
 
 /* Styles for tablets and larger screens */
-@media(min-width: 768px) and (max-width: 812px) {
+@media(min-width: 768px) and (max-width: 1199px) {
   .content {
-    max-width: 812px;
+    max-width: 100%;
     margin: 0 auto;
   }
   ._mobile {
@@ -265,7 +266,8 @@ footer .bottom-nav #cars {
   ._tablet-banner {
     background: url('./assets/_tablet/_tablet_car_banner.png');
     height: 390px !important;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
   }
   ._tablet-banner h2 {
     font-size: 59px !important;
@@ -311,13 +313,14 @@ footer .bottom-nav #cars {
     padding: 10% 0 1% 0;
   }
   .features .current-offers .offer-cars .current-cars>img {
-    height: 8rem;
+    height: 15vw;
     width: auto;
     padding-bottom: 0%;
   }
   .features .current-offers .offer-cars .current-cars>h3 {
     padding-top: 4%;
   }
+ 
   .promotions {
     padding: 5% 0;
   }
@@ -377,7 +380,7 @@ footer .bottom-nav #cars {
 } 
 
 /* Styles for desktops and larger screens */
-@media(min-width: 1024px) {
+@media(min-width: 1200px) {
   .content {
     max-width: 100%;
     margin: 0 auto;
@@ -458,7 +461,7 @@ footer .bottom-nav #cars {
     width: 24%;
     margin: 0 !important;
   }
-  .main-section .button-collection>button:nth-last-child(1) { /* END OF MAIN-SECTION BUTTON */
+  .main-section .button-collection>button:nth-last-child(1) {
     margin-bottom: 0% !important;
   }
   .main-section .button-collection>button:nth-child(1) { 
@@ -474,14 +477,14 @@ footer .bottom-nav #cars {
     font-size: 18px;
   }
   .features h2 {
-    font-size: 22px;
+    font-size: 21px;
   }
   .features p {
     padding: 2% 0 2% 0;
   }
   .features .features-header{
     padding-bottom: 0%;
-    margin-right: 156px;
+    margin-right: 40px;
     margin-left: 3%;
   }
   .features ._viewport{
@@ -500,10 +503,8 @@ footer .bottom-nav #cars {
   .features #a-collection ul > li {
     line-height: 36px;
   }
-  .features .current-offers .offer-cars {
-    display: flex;
-    justify-content: space-between;
-    width: 70rem;
+  .features .current-offers .offer-cars  {
+    width: 60vw;
   }
   .features .current-offers .offer-cars .current-cars {
     padding: 0% 0% 0% 0% !important;
@@ -518,10 +519,7 @@ footer .bottom-nav #cars {
     padding-top: 4%;
   }
   .promotions {
-    padding: 5% 9% 5% 9%;
-    display: flex;
-    justify-content: space-between;
-    
+    padding: 5% 4%;
   }
   .promotions .in-stock{
     margin: 0 !important;
@@ -533,14 +531,12 @@ footer .bottom-nav #cars {
     display: none;
   }
   .promotions ._tablet-in-stock {
-    display: none;
-  }
-  .promotions ._tablet-in-stock {
     display: block !important;
     background: url('./assets/_tablet/_tablet_promotions.png');
     height: 30rem !important;
-    width: 47rem;
+    width: 48rem;
     background-size: cover;
+    margin: 0 auto !important;
   }
   .promotions ._tablet-in-stock h3 {
     margin-bottom: 0%;
@@ -589,5 +585,34 @@ footer .bottom-nav #cars {
   footer .bottom-nav #cars {
     padding: 3% 9%;
     text-align: left;
+  }
+}
+
+@media(min-width: 1300px) {
+  .features .features-header{
+    margin-right: 80px !important;
+  }
+}
+
+@media(min-width: 1400px) {
+  nav #nav-button ul > li:nth-child(1) {
+    padding-left: 6rem !important;
+  }
+}
+
+@media(min-width: 1800px) {
+  nav #nav-button ul > li:nth-child(1) {
+    padding-left: 9rem !important;
+  }
+  .features .features-header{
+    margin-right: 165px !important;
+  }
+
+  .promotions {
+    padding: 5% 9% 5% 9%;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -10,11 +10,6 @@
     <script defer src="./script.js"></script>
 </head>
 <body>
-    <div class="spinner">
-        <div class="spinner-border text-primary" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-    </div>
     <div class="content">
         <header class="_mobile"> 
             <div class="d-flex align-items-center justify-content-around p-4">
@@ -61,7 +56,7 @@
             </div>
         </header>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-xxl navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -118,25 +113,25 @@
                     <h2>Let Us Help You</h2>
                     <div id="a-collection"></div>
                 </div>
-                <div class="current-offers">
+                <div class="current-offers ">
                     <div class="_viewport">
                         <h2>Current Offers</h2>
                         <a href="">View all offers</a>
                     </div>
-                    <div class="offer-cars">
-                        <div class="current-cars">
+                    <div class="offer-cars row row-cols-xs-1 row-cols-sm-1 row-cols-xl-2 row-cols-xxl-2">
+                        <div class="current-cars col">
                             <img src="./assets/img/accord_sedan_cvt_lx.png" alt="2015_honda_accord_sedan_cvt_lx">
                             <h3>2015 Honda Accord Sedan CVT LX</h3>
                             <p>Lease for $199/mo. for 36 months</p>
                             <a href="#">See Details</a>
                         </div>
-                        <div class="current-cars">
+                        <div class="current-cars col">
                             <img src="./assets/img/crv_cvt_2wd_lx.png" alt="2015_honda_cr-v_cvt_2wd_lx">
                             <h3>2015 Honda CR-V CVT 2WD LX</h3>
                             <p>Lease for $239/mo. for 39 months</p>
                             <a href="#">See Details</a>
                         </div>
-                        <div class="current-cars">
+                        <div class="current-cars col">
                             <img src="./assets/img/odyssey_lx.png" alt="2015_honda_odyssey_lx">
                             <h3>2015 Honda Odyssey LX</h3>
                             <p>Lease for $269/mo. for 36 months</p>
@@ -148,19 +143,19 @@
         </div>
     
         <div class="promotions text-center">
-            <div class="_mobile-in-stock in-stock">
+            <div class="_mobile-in-stock in-stock ">
                 <div class="text">
                     <p>The New 2015 Fit</p>
                     <p>Is now in stock!</p>
                 </div>
             </div>
-            <div class="_tablet-in-stock in-stock">
+            <div class="_tablet-in-stock in-stock ">
                 <div class="text">
                     <p>The New 2015 Fit</p>
                     <p>Is now in stock!</p>
                 </div>
             </div>
-            <div class="pt-4">
+            <div class="pt-4 col">
                 <img src="./assets/img/lease.png" alt="500_off_coupon">
             </div>
         </div>
@@ -181,6 +176,10 @@
             </div>
         </footer>
     </div>
-    
+    <div class="spinner">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
 </body>
 </html>
